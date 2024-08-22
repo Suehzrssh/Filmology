@@ -1,0 +1,155 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movieContainer {
+  width: 1200px;
+  height: 500px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  background-color: azure;
+  border-radius: 15px;
+}
+.inputs {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+input {
+  width: 85%;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  font-size: larger;
+  margin-top: 20px;
+  background-color: transparent;
+  transition: .5s all;
+  border: 3px solid rgb(145, 142, 139);
+}
+input:hover {
+  transform: scale(1.1);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.addBtn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3a6b4b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.addBtn:hover {
+  background-color: #2a583a;
+}
+.addBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.addBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.addBtn:hover span {
+  padding-right: 25px;
+}
+
+.addBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.movieList {
+  width: 55%;
+  height: 100%;
+  background-color: azure;
+  border-radius: 15px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  transition-duration: .5s;
+}
+td, th {
+  border: 1px solid rgb(145, 142, 139);
+  text-align: left;
+  padding: 15px;
+  text-align: center;
+  cursor: grab;
+  transition-duration: .5s;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th {
+  text-transform: uppercase;
+  font-size: 11pt;
+}
+tr:hover {
+  background-color: rgb(145, 142, 139);
+  color: rgb(248, 248, 248);
+}
+.delBtn {
+  background-color: transparent;
+  border: none;
+  transition: .5s all;
+}
+.faTrash {
+  color: red;
+  cursor: pointer;
+  font-size: larger;
+}
+.delBtn:hover {
+  transform: scale(2);
+}
+.mName {
+  text-transform: capitalize;
+}
+.director {
+  text-transform: capitalize;
+}
